@@ -1,5 +1,7 @@
-import { tweetsData } from './data.js'
+import { defaultTweetsData } from './data.js'
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
+
+let tweetsData =[]
 
 document.addEventListener('click', function(e){
     if(e.target.dataset.like){
@@ -146,8 +148,24 @@ function getFeedHtml(){
 }
 
 function render(){
+    saveToLocalStorage(tweetsData)
     document.getElementById('feed').innerHTML = getFeedHtml()
 }
 
+function saveToLocalStorage(dataArr){
+    localStorage.setItem("tweetsData",JSON.stringify(dataArr))
+}
+
+function loadFromLocalStorage(){
+    if(localStorage.getItem("tweetsData")){
+        console.log("loaded from local storage...")
+        tweetsData = JSON.parse(localStorage.getItem("tweetsData"))
+    }else{
+        console.log("using default data...")
+        tweetsData = defaultTweetsData
+    }
+}
+
+loadFromLocalStorage()
 render()
 
