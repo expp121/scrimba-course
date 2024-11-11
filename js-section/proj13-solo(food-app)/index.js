@@ -42,14 +42,18 @@ document.addEventListener('click',function(e) {
 
     if(e.target.id === "complete-order-btn"){
         document.getElementById("card-details").classList.remove("hidden")
+    }else if(e.target.id === "close-modal"){
+        document.getElementById("card-details").classList.add("hidden")
     }
 })
 
 document.addEventListener('submit', function(e){
     e.preventDefault()
     document.getElementById("card-details").classList.add("hidden")
-    orderContainer.innerHTML = `
+    purchasedProductsContainer.innerHTML = `
     <p class='purchase-success'>Thanks, ${document.getElementById('name').value}! Your order is on its way!</p>`
+    order.price=0
+    order.products=[]
 })
 
 function renderToCart(){
@@ -59,7 +63,13 @@ return `<div class="purchased-item">
             <p class="purchased-item-remove" data-product-name="${purchasedItem.name}">remove</p>
             <p class="purchased-item-price">\$${purchasedItem.price}</p>
         </div>`
-}).join('')
+}).join('') +
+        `<hr>
+        <div class="purchase-total">
+            <p>Total price:</p>
+            <p id="purchase-total-price">$0</p>
+        </div>
+        <button id="complete-order-btn">Complete order</button>`
 document.getElementById("purchase-total-price").textContent=`\$${order.price}`
 }
 

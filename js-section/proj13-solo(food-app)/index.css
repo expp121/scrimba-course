@@ -164,6 +164,16 @@ main{
     font-weight: 700;
     line-height: 31.12px;
 }
+.close-container{
+    text-align: right;
+}
+.close-modal{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #8b8b8b;
+    background-color: #FFF;
+    border-radius: 50%;
+}
 
 form input{
     display: block;
