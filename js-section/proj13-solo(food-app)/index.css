@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: "Smythe", system-ui;
+}
+
+.hero{
+    padding: 46px 0 0 46px;
+    height: 167px;
+    background-image: url("images/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.hero-title{
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.hero p {
+    font-size: 22.42px;
+    line-height: 13.8px;
+}
+
+main{
+    padding: 67px 46px 45px 46px;
+}
+
+.product{
+    border-bottom: 1px solid #D2D2D2;
+    display: flex;
+    position: relative;
+    justify-content: left;
+    align-items: start;
+    margin-bottom: 45px;
+    font-weight: 400;
+}
+.product-img{
+    margin: 0px;
+    font-family: Inter;
+    font-size: 78.72px;
+    line-height: 98.4px;
+    text-align: center;
+}
+.product-info h1{
+    margin: 0px;
+    margin-top: 5px;;
+    font-size: 28px;
+    line-height: 16.8px;
+}
+
+.product-info-ingredients{
+    font-size: 16px;
+    line-height: 24px;
+    color: #8b8b8b;
+}
+
+.product-info-price{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.add-to-cart-btn{
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #DEDEDE;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-top: 10px;
+
+    font-family: Inter;
+    font-size: 32px;
+    line-height: 24px;
+    text-align: center;
+}
+
+#order{
+    position: relative;
+    text-align: center;
+}
+
+#order h1{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+}
+
+#order hr{
+    height: 2px;
+    background-color: #393333;
+}
+
+#order button{
+    background-color: #16DB99;
+    color: #FFF;
+    border: none;
+    border-radius: 3px;
+    padding: 18px 185px;
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.purchased-item{
+    align-items: center;
+    display: flex;
+    gap: 13px;
+}
+
+.purchased-item-name{
+    margin: 5px 0px;
+    font-size: 28px;
+    line-height: 16.8px;
+}
+
+.purchased-item-remove{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: 400;
+    color: #BBBBBB;
+    cursor: pointer;
+}
+
+.purchased-item-price{
+    font-size: 20px;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.purchase-total{
+    justify-content: space-between;
+    display: flex;
+    font-size: 28px;
+}
+
+
+.card-details{
+    padding: 30px 24px;
+    position: fixed;
+    width: 525px;
+    height: 540px;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 5px 5px 255px 0px #00000080;
+    text-align: center;
+    border: 1.3px solid #757575;
+    background-color: white;
+}
+
+.card-details h1{
+    margin:46px;
+    font-family: Verdana;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.12px;
+}
+.close-container{
+    text-align: right;
+}
+.close-modal{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #8b8b8b;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 15px 26px;
+}
+
+form button{
+    background-color: #16DB99;
+    color: white;
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 31.12px;
+    border:none;
+    padding: 15px 210px;
+}
+
+.purchase-success{
+    font-size: 32px;
+    font-weight: 400;
+    padding: 50px 60px;
+    background-color: #ECFDF5;
+    color: #065F46;
+}
+
+.hidden{
+    display: none;
+}
+

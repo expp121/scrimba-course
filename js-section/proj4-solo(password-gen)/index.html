@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1>Generate a<br><span>random password</span></h1>
+            <h2>Never use an insecure password again.</h2>
+            <button id="num-btn" onclick="useNum()">Use Numbers</button>
+            <button id="sym-btn" onclick="useSym()">Use Symbols</button>
+            <div>
+                <label for="pLength">Length:</label>
+                <input id="len-input" type="number" name="pLength" value="15" step="1">
+            </div>
+            <button class="default-btn-style dpb" onclick="generatePass()">Generate passwords</button>
+            <hr>
+            <div id="passwords-container">
+                <p onclick="copy()" id="pf1">
+                </p>
+                <p onclick="copy()" id="pf2">
+                </p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
