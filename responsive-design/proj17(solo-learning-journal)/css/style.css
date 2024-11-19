@@ -1,0 +1,259 @@
+/* General Reset */
+html, body {
+    font-family: "Source Sans 3", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    color: #0E0E0E;
+    padding: 0 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+}
+
+header img {
+    width: 5vw;
+    height: 5vw;
+}
+
+header h1 {
+    font-size: 0.846rem;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2.5em;
+    font-size: 0.75rem;
+}
+
+header ul a {
+    font-weight: 600;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Logo Section */
+.logo-section {
+    font-family: "Roboto", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+}
+
+/* Hero and Post-Hero Sections */
+.hero, .post-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #FFFFFF;
+}
+
+.hero {
+    height: 34vh;
+    padding: 0 1.25em;
+    background: url("/images/hero.png") no-repeat center bottom;
+    background-size: cover;
+}
+
+.post-hero {
+    color: #151515;
+    height: 28vh;
+}
+
+.hero h2, .post-hero h2 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: -3%;
+    line-height: 1;
+}
+
+.hero-date, .post-info h2 {
+    font-size: 0.75rem;
+}
+
+/* Post Image */
+.post-image {
+    margin-bottom: 1.5em;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    object-position: 50% 70%;
+}
+
+/* Articles Containers */
+.articles-container, .about-me-articles-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.articles-container {
+    padding: 2.125em 1.25em;
+}
+
+.post-recent-post {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Card Styles */
+.card-img {
+    width: 100%;
+    height: 28vh;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.card-date {
+    font-size: 0.885rem;
+}
+
+.card-title {
+    margin: 0;
+    color: #141414;
+}
+
+.card-description {
+    color: #505050;
+    line-height: 1.25rem;
+}
+
+/* View More Section */
+.view-more {
+    text-align: center;
+    color: #000000;
+    font-weight: 700;
+}
+
+.view-more a {
+    color: inherit;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 12vh;
+    background-color: #202020;
+    color: #ECECEC;
+}
+
+footer h2, footer p {
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+/* About Me Section */
+.about-me-container {
+    padding: 2.125em 1.25em;
+}
+
+.personal-intro {
+    margin-bottom: 3em;
+}
+
+.personal-intro img {
+    width: 45vw;
+}
+
+.personal-intro h1 {
+    font-size: 2.125rem;
+    letter-spacing: -3%;
+    line-height: 1;
+}
+
+.info h2 {
+    font-size: 1rem;
+}
+
+.dp-none{
+    display: none;
+}
+
+@media (min-width: 897px) {
+    header{
+        padding: 0 2.5em;
+    }
+    header img{
+        width: 3vw;
+        height: 3vw;
+    }
+
+    header h1 {
+        font-size: 1.25rem;
+    }
+
+    header ul {
+        font-size: 1rem;
+    }
+    .hero{
+        height: 45vh;
+        padding: 2.5em;
+    }
+    
+    .dp-none{
+        display: inherit;
+    }
+
+    .articles-container, .about-me-articles-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5em;
+    }
+
+    .about-me-container{
+        padding: 2.125em 3em;
+        background-color: #FAFAFA;
+    }
+
+    .post-hero{
+        margin: 2em 4em;
+        height: unset;
+    }
+
+    .post-image{
+        height: 40vh;
+    }
+    .post-info{
+        margin: 0 4em;
+    }
+    
+    .hero-date, .post-info h2{
+        font-size: 1.5rem;
+    }
+    .post-recent-post{
+        font-size: 1.5rem;
+    }
+    .post-info p{
+        font-size: 1.125rem;
+    }
+
+    .personal-intro{
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+    .personal-intro img{
+        width: 20vw;
+    }
+
+    .about-me-description{
+        padding: 0 5em;
+    }
+
+    .about-me-description h2{
+        font-size: 1.5rem;
+    }
+}
