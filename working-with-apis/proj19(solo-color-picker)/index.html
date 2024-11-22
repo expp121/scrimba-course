@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Color Picker!</h1>
+    </header>
+    <main>
+      <section>
+        <form>
+          <input type="color" id="color-box" name="color-box" value="#f55a5a" />
+          <select name="color-scheme" id="color-scheme">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+          </select>
+          <button id="get-color-btn" type="submit">Get color scheme</button>
+        </form>
+      </section>
+      <section id="colors-container" class="colors-container">
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
