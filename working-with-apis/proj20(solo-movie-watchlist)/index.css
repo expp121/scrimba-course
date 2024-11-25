@@ -1,0 +1,169 @@
+html, 
+body {
+    font-family: "Inter", serif;
+    margin: 0;
+    height: 80%;
+}
+
+a{
+    text-decoration: none;
+}
+
+header, header a{
+    color: white;
+}
+
+.nav-text{
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/bg-image.png");
+    background-position: center;
+    background-position: 50% 20%;
+    height: 13em;
+}
+
+.nav-text h1{
+    font-size: 2.625em;
+}
+
+.nav-text a{
+    font-size: 0.875em;
+    font-weight: 700;
+}
+
+form{
+    position:absolute;
+    top:11.75em;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
+
+form button, form input[type=text]{
+    box-sizing: border-box;
+    border: 2px solid #D1D5DB;
+    border-radius: 0.375em;
+    font-size: 0.875em;
+    padding: 0.8em 2.9em;
+    font-weight: 500;
+}
+
+form input[type=text] {
+    border-right: none;
+    border-radius:  0.375em 0 0  0.375em;
+    background-color: white;
+    background-image: url('images/search-icon.svg');
+    background-position: 3% 50%; 
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    min-width: 460px;
+}
+
+form button{
+    border-radius:  0 0.375em 0.375em 0;
+    background-color: #F9FAFB;
+}
+
+main{
+    height: inherit; 
+}
+
+.temp-container{
+    height: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-temp-icon{
+    width: 4.375em;
+    display: block;
+}
+
+.main-temp-text{
+    color: #DFDDDD;
+}
+
+.movies-container{
+    height: inherit;
+    padding: 3.9375em 2.75em;
+}
+
+.movie{
+    align-items: center;
+    gap: 1.3125em;
+}
+
+.movie-cover-image{
+    width: 6.25em;
+    height: 9.375em;
+}
+
+.movie-title-rating{
+    align-items: center;
+    gap: 0.5em;
+}
+
+.movie-title{
+    margin:0;
+}
+
+.movie-rating-container{
+    gap: 0.25em;
+}
+
+.movie-rating,.movie-length-genres-watchlist,.movie-description{
+    font-size: 0.75em;
+}
+
+.movie-length-genres-watchlist{
+    gap:1.125em;
+}
+
+.movie-watchlist{
+    cursor: pointer;
+    background: none;
+    border: none;
+    align-items: center;
+    gap: 0.25em;
+}
+
+.movie-description{
+    margin: 0;
+    color: #6B7280;
+}
+
+.flex{
+    display: flex;
+}
+
+hr{
+    margin-top: 1.25em;
+    border: 1px solid #E5E7EB;
+}
+
+
+
+/* WATCHLIST.HTML */
+
+.center-flex{
+    align-items: center;
+}
+
+.fd-col{
+    flex-direction: column;
+}
+
+.gap05em{
+    gap:0.5em;
+}
+
+.empty-watchlist-text{
+    color:#DFDDDD;
+    font-size: 1.125em;
+    font-weight: 700;
+}
+
+.add-movies-text{
+    color: #363636;
+}

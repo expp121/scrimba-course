@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Spicy+Rice&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="nav-text flex">
+            <h1>Find your film</h1>
+            <a href="watchlist.html">My Watchlist </a>
+        </div>
+        <form class="flex">
+            <input type="text" name="movie-search" id="movie-search" placeholder="Search for a movie"/>
+            <button>Search</button>
+        </form>
+    </header>
+    <main>
+        <div id="movies-container" class="movies-container">
+            <div id="temp-container" class="temp-container flex">
+                <img class="main-temp-icon"src="images/movie-icon.svg" alt="movie icon">
+                <p class="main-temp-text">Start exploring</p>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
