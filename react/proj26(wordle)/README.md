@@ -1,7 +1,7 @@
 # Intro
 This is one of the many projects I had to do at scrimba's frontend course.
 It's about learning react and the project aims to teach me the basics of react.
-The app is about rolling dice and trying to get all dice to be the same
+The app is about guessing the right word
 
 
 ![Application interface](app.png)
