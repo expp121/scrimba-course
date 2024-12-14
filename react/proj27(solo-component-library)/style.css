@@ -121,6 +121,7 @@ button.button-danger {
 }
 
 .badge{
+    display: inline-block;
     margin: 0.25em;
     text-align: center;
     padding: 0.125em 0.75em;
@@ -169,4 +170,75 @@ button.button-danger {
 .badge-pink{
     color: #9D174D;
     background-color: #FCE7F3;
+}
+
+.banner{
+    display: inline;
+    padding: 1em;
+    gap: 0.75em;
+    display: flex;
+    border-radius: 0.375em;
+    background-color: #FEF2F2;
+    align-items: start;
+}
+
+.banner-success{
+    background-color: #ECFDF5;
+}
+.banner-success h2{
+    color: #065F46;
+}
+.banner-success p{
+    color: #047857;
+}
+
+.banner-warning{
+    background-color: #FFFBEB;
+}
+.banner-warning h2{
+    color: #92400E;
+}
+.banner-warning p{
+    color: #B45309;
+}
+
+.banner-error{
+    background-color: #FEF2F2;
+}
+.banner-error h2{
+    color: #92400E;
+
+}
+.banner-error p{
+    color: #B45309;
+}
+
+
+.banner-info{
+    background-color: #EFF6FF;
+}
+.banner-info h2{
+    color: #1E40AF;
+}
+.banner-info p{
+    color: #1C51B9;
+}
+
+.banner-icon{
+    width: 1.25em;
+}
+
+.banner h2{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.banner p{
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 0.5rem;
 }
