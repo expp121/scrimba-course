@@ -5,9 +5,6 @@
 body {
   height: 100vh;
   margin: 0;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
   font-family: Inter;
 }
 
@@ -282,4 +279,81 @@ button.button-danger {
 
 .hovered{
   background-color: black;
+}
+
+.testimonial{
+  background-color: #2545B8;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  padding-bottom: 4em;
+  color: #FFFFFF;
+  position: relative;  /* So the avatar can be positioned relative to this container */
+}
+
+.testimonial-avatar{
+  object-fit: cover;
+  object-position: 15% 35%;
+  max-height: 28vh;
+  margin-top: -15vh;
+  border-radius: 0.75em;
+}
+
+.testimonial-quote-icon{
+  width: 3em;
+  height: 3em;
+  margin-top: 3em;  /* Space between quote icon and text */
+  margin-bottom: 1.5em;
+}
+
+.testimonial-text{
+  font-family: Inter,sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2em;
+  max-width: 90%;
+  margin: 0;
+}
+
+.testimonial-author{
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 1.5em 0 0 0;
+}
+
+.testimonial-author-position{
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+}
+
+@media (min-width: 920px) {
+  .testimonial{
+    display: flex;
+    flex-direction: row; /* Ensures children are laid out horizontally */
+    position: relative; /* Required for avatar positioning */
+    align-items: center; /* Vertically align the avatar and content */
+    gap: 2em; /* Space between the avatar and the content */
+  }
+
+  .testimonial-avatar{
+    position: absolute; /* Allow positioning outside the container */
+    top: -10%; /* Extend 10% outside the top */
+    bottom: -10%; /* Extend 10% outside the bottom */
+    left: 4.5em;
+    height: calc(100% + 20%); /* Full container height plus extra for the overflow */
+    object-fit: cover; /* Ensure the image fills the area while maintaining proportions */
+    border-radius: 0.75em; /* Keep rounded corners */
+    max-height: unset;
+    margin-top: unset;
+    object-position:unset;
+  }
+
+  .testimonial > div {
+    margin-left: 32em; /* Push the content to the right of the avatar */
+  }
 }

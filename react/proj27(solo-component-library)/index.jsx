@@ -3,7 +3,9 @@ import ReactDOM from "react-dom/client";
 import Badge from "/components/Badge/Badge";
 import Banner from "/components/Banner/Banner";
 import Card from "/components/Card/Card";
+import Testimonial from "/components/Testimonial/Testimonial";
 import cardIcon from "/components/Card/icon.svg";
+import avatar from "/components/Testimonial/avatar.jpeg"
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
         icon={cardIcon}
         iconAlt="upload icon"
       />
+
+      <Testimonial avatar={avatar} text="asjdklasjdlkasjdklsakdasklsajkldsajkldsadkjlaslj" author="asdjkalsdjslak" authorPosition="askdaks;ldka;lsdk;\"/>
     </>
   );
 }
