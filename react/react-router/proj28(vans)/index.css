@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+nav > a {
+    margin: 0;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.56rem;
+    font-weight: 900;
+    line-height: 2.5em;
+
+}
+nav > div > a {
+    text-decoration: none;
+    margin-left: 0.75em;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.375em;
+    color: #4D4D4D;
+}
+
+nav{
+    background-color: #FFF7ED;
+    display: flex;
+    padding: 2.25em 1.625em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: #252525;
+}
+
+footer p {
+    text-align: center;
+    padding: 1.625em 0;
+    color: #AAAAAA;
+    margin: 0;
+}
+
+.container{
+    color: white;
+    padding: 4.125em 1.625em;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.6) ), url('bg.png');
+}
+
+.container h1{
+    margin: 0;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 42px;
+}
+
+.container p {
+    margin: 1.375em 0 3.25em 0;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.container button{
+    padding: 0.5em;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2rem;
+    background-color: #FF8C38;
+    border: none;
+    border-radius: 0.3125em;
+    
+}
+
+.about-container img {
+    width: 100%;
+    object-fit: cover;
+    height: 30vh;
+}
+
+.about-content-container{
+    padding: 0 1.625em;
+}
+
+.about-content-container h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 3em 0 0 0;
+    color: #161616;
+}
+
+.about-content-container p{
+    margin: 2em 0 3.5em 0;
+}
+
+.about-content-container section{
+    background-color: #FFCC8D;
+    border-radius: 0.3125em;
+    padding: 2em 2.25em;
+    margin: 0 0 3.25em 0;
+}
+
+.about-content-container section h2{
+    color: #161616;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    margin: 0 0 1.625em 0;
+}
+
+.about-content-container section button{
+    background-color:  #161616;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    padding: 0.75em 1.375em;
+    
+    font-weight: 700;
+    line-height: 1.5rem;
+
+}
