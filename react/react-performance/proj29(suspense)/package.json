@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s041bir",
-  "description": "https://scrimba.com/the-frontend-developer-career-path-c0j/~0121/s0989kjnut/head",
+  "name": "proj29 suspense",
+  "description": "Showcases how react suspense works",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -10,7 +10,7 @@
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "6.4.3",
+    "@faker-js/faker": "8.0.1",
     "vite": "latest"
   },
   "devDependencies": {
